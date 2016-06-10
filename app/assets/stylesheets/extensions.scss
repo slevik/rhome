@@ -1,0 +1,186 @@
+// Place all the styles related to the extensions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// images
+.extension-light {
+  background: image-url('extension-light.jpg');
+}
+
+.extension-light-outside {
+  background: image-url('extension-light-outside.jpg');
+}
+
+.extension-fireplace {
+  background: image-url('extension-fireplace.jpg');
+}
+
+.extension-temp {
+  background: image-url('extension-temp.jpg');
+}
+// images
+
+
+.multi-item-carousel {
+  .carousel-inner {
+    > .item {
+      transition: 500ms ease-in-out left;
+    }
+    .active {
+      &.left {
+        left: -33%;
+      }
+      &.right {
+        left: 33%;
+      }
+    }
+    .next {
+      left: 33%;
+    }
+    .prev {
+      left: -33%;
+    }
+    @media all and (transform-3d),
+    (-webkit-transform-3d) {
+      > .item {
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control {
+    &.left,
+    &.right {
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body {
+  background: #f7f7f7;
+  color: #ddd;
+  overflow: visible;
+  border: none;
+}
+
+h1 {
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.extension-place-4 {
+  width:100%;
+}
+
+.theText {
+  margin-top: 0px;
+  font-size: 17px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top:4px !important;
+  padding-bottom:0 !important;
+  height: 21px;
+  verflow: hidden;
+  min-height: 21px;
+  font-size: 15px;
+}
+.navbar,.navbar-default, .navbar-static-top {
+  height:28px;
+  min-height: 28px;
+  overflow: hidden;
+  border: none;
+}
+
+.navbar-toggle {
+  height: 10px;
+  overflow: hidden;
+}
+
+.extension {
+  border: 1px solid transparent;
+  opacity: .3;
+  overflow: hidden;
+
+
+  -moz-background-size: 100% 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100% 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100% 100%; /* Opera 9.6+ */
+  background-size: 100% 100%; /* Современные браузеры */
+  background-repeat: no-repeat;
+}
+
+.extension-on {
+  opacity: 1;
+}
+
+.extension-static {
+  opacity: 1;
+}
+
+.theText {
+  text-align: center;
+}
+
+.theText p {
+  font-size: 25pt;
+  margin-top: -20px;
+  font-weight: bold;
+}
+.extension-on .theText p {
+  color: white;
+//  font-size: larger;
+}
+
+.extension-static .theText p {
+  color: white;
+}
+
+
+.theIcon {
+  height: 10px;
+  padding-top: 50px;
+}
+
+.extension-on .theIcon {
+//  background-position: -20;
+  background: image-url('on.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.carousel-control {
+  width: 50px;
+}
+
+.shift-margin {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: -15px;
+  margin-right: -20px;
+//  overflow: hidden;
+  margin-bottom: -10px;
+}
+
+.container-fluid {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  margin-top: -20px;
+  border-radius: 3em;
+}
+
+.sleep {
+  opacity: .1;
+}
